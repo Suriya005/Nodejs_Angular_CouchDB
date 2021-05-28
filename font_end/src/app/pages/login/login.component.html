@@ -1,0 +1,19 @@
+<!-- 
+    [value] one way data can't edit
+    [(ngModel)]  two way daya can edit
+-->
+
+<!--  style form cloud have tag name
+    <form > 
+    <input type="text" name="" [(ngModel)]= "form.userName" placeholder="name">
+    <p>{{form.userName}}</p>
+    <input type="text" name="" [(ngModel)]= "form.password" placeholder="password">
+    <p>{{form.password}}</p>
+    <button (click)="sendForm()">submit</button>
+</form> 
+-->
+<h1>Login Form</h1>
+<input type="text" [(ngModel)]="form.userName" placeholder="name">
+<input type="password" [(ngModel)]="form.password" placeholder="password">
+<button (click)="sendForm()">submit</button>
+
